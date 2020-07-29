@@ -1,0 +1,79 @@
+.find-us {
+  .wrapper();
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 63px;
+}
+
+.find-us__title {
+  font-size: 21px;
+  line-height: 26px;
+  padding-top: 7px;
+}
+
+.find-us__text {
+  .text-font();
+  width: 260px;
+  padding-left: 29px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+.find-us__button {
+  padding: 15px 47px;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+  cursor: pointer;
+}
+
+.find-us__button:hover {
+  background-color: #669ec0;
+}
+
+.find-us__button:active {
+  background-color: #5496bd;
+}
+
+.find-us__button:active span {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .find-us {
+    width: 568px;
+    margin-top: 47px;
+    margin-bottom: 73px;
+  }
+
+  .find-us__title {
+    font-size: 30px;
+    line-height: 26px;
+    margin-top: 0;
+  }
+
+  .find-us__text {
+    padding-left: 59px;
+    padding-top: 2px;
+    width: 450px;
+    white-space: pre-line;
+    margin-bottom: 58px;
+  }
+
+  .find-us__button {
+    padding: 15px 136px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .find-us {
+    margin-top: 48px;
+    margin-bottom: 81px;
+  }
+
+  .find-us__text {
+    margin-bottom: 62px;
+  }
+}
