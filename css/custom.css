@@ -118,3 +118,54 @@ body {
   border-color: transparent;
 }
 
+.col-12 {
+  position: relative;
+  padding-top: 220px;
+}
+
+.project-picture {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 200px;
+}
+
+@media (min-width: 575px) {
+  .project-picture {
+    left: 0;
+    width: 80%;
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-picture {
+    left: 0;
+    width: 80%;
+    height: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .project-picture {
+    left: 10%;
+    width: 60%;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-picture {
+    left: 10%;
+    width: 60%;
+    height: 200px;
+  }
+
+  .project-picture:hover {
+    left: 3%;
+    width: 500px;
+    height: 350px;
+    box-shadow: 0 0 5px 10px;
+  }
+}
