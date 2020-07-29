@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм» [![Build status][travis-image]][travis-url]
 
-* Студент: [Егор Лимачев](https://up.htmlacademy.ru/javascript/17/user/167879).
-* Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/amator).
+* Студент: [Егор Лимачев](https://up.htmlacademy.ru/javascript/20/user/167879).
+* Наставник: `Без наставника`.
 
 ---
 
@@ -48,5 +48,5 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Профессиональный JavaScript](https://htmlacademy.ru/intensive/javascript)», уровень 1 от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.com/htmlacademy-javascript/167879-kekstagram-17.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-javascript/167879-kekstagram-17
+[travis-image]: https://travis-ci.com/htmlacademy-javascript/167879-kekstagram-20.svg?branch=master
+[travis-url]: https://travis-ci.com/htmlacademy-javascript/167879-kekstagram-20

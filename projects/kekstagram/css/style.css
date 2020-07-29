@@ -46,28 +46,6 @@ main {
           box-sizing: content-box;
 }
 
-.hidden {
-  display: none;
-}
-
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .container {
   width: 1360px;
   margin: 0 auto;
@@ -306,6 +284,7 @@ main {
 
 .img-upload__wrapper {
   margin: 0 auto;
+  padding-bottom: 60px;
   width: 582px;
 
   text-align: center;
@@ -404,7 +383,6 @@ main {
   height: 100%;
 
   padding-top: 60px;
-  padding-bottom: 60px;
   overflow: auto;
 
   background-color: rgba(0, 0, 0, 0.8);
@@ -453,13 +431,13 @@ main {
   text-align: center;
   vertical-align: middle;
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   border: 0;
 }
 
 .scale__control:hover,
 .scale__control:focus {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .scale__control:active {
@@ -595,7 +573,7 @@ main {
 .effect-level__pin {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 20%;
   z-index: 1;
 
   width: 18px;
@@ -615,7 +593,7 @@ main {
 .effect-level__depth {
   position: absolute;
 
-  width: 0;
+  width: 20%;
   height: 100%;
 
   background-color: #ffe753;
@@ -698,8 +676,7 @@ main {
   outline: auto 5px highlight;
 }
 
-.effects__preview--chrome
-{
+.effects__preview--chrome {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
@@ -715,8 +692,8 @@ main {
 }
 
 .effects__preview--phobos {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
 }
 
 .effects__preview--heat {
@@ -765,12 +742,6 @@ main {
 
   border-radius: 5px;
 }
-
-.text__description:invalid:focus {
-  border-color: red;
-  outline: none;
-}
-
 
 
 /**
@@ -963,6 +934,7 @@ main {
 
   margin: 0;
   padding: 0;
+  padding-top: 20px;
 }
 
 .social__comment {
@@ -982,7 +954,6 @@ main {
 .social__comment-count {
   padding-top: 20px;
   padding-left: 65px;
-  padding-bottom: 20px;
 }
 
 .social__comments-loader {
@@ -1356,10 +1327,6 @@ main {
   border-radius: 5px;
 }
 
-.error__button:first-child {
-  margin-right: 30px;
-}
-
 .error__button:hover,
 .error__button:focus,
 .success__button:hover,
@@ -1453,4 +1420,26 @@ main {
     -ms-grid-row-span: 3;
     grid-row: 1 / span 3;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
 }
