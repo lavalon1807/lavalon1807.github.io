@@ -1,0 +1,179 @@
+[33mcommit a117ebb0709023ec9cb3521bc6ef1f8ceb0bfb36[m[33m ([m[1;36mHEAD -> [m[1;32mmodule4-task2[m[33m, [m[1;31morigin/module4-task2[m[33m)[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Thu Dec 5 14:20:09 2019 +0300
+
+    доделаны две страницы по сеткам
+
+[33mcommit 2df20356c182d9333957289b389b154c2af322b0[m[33m ([m[1;31morigin/module4-task1[m[33m, [m[1;32mmodule4-task1[m[33m)[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Thu Dec 5 09:44:21 2019 +0300
+
+    исправлен размер экрана 1280 на 1200
+
+[33mcommit df0d297f6dd79172eafaa5015010512757e34898[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Wed Dec 4 19:56:13 2019 +0300
+
+    доделаны сетки на форм странице
+
+[33mcommit ebd8f7e53e1f9d8a56bf2817cfb1ebd02f2c5547[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Tue Dec 3 16:59:25 2019 +0300
+
+    Доделана сетка страниц фото
+
+[33mcommit 84424505a0402b3c458552258a662717863e8cc4[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Tue Dec 3 11:47:43 2019 +0300
+
+    доделал футер сетку индекс страниц
+
+[33mcommit e8bafeece1c7be7dd4077ed1a17f32d74b149392[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Mon Dec 2 23:07:35 2019 +0300
+
+    скачал все обновления
+
+[33mcommit dcf19eae89f5c52b16169f9bea2a6ae6b7b82121[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Mon Dec 2 22:59:51 2019 +0300
+
+    Сделал сетки на индекс мобайл таблет десктоп-2
+
+[33mcommit e9b31601ff457f1deaf2884e9110b45655e50010[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Mon Dec 2 22:55:10 2019 +0300
+
+    Сделал сетки на индекс мобайл таблет десктоп
+
+[33mcommit 216db80fad055a3adac4e27b2facab74396f7829[m
+Merge: 9537c40 af718a5
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun Dec 1 14:06:11 2019 +0300
+
+    Merge pull request #9 from lavalon1807/module3-task2
+
+[33mcommit af718a5fb9c39a76e83e93833b3787bc3ed2df23[m[33m ([m[1;31morigin/module3-task2[m[33m, [m[1;32mmodule3-task2[m[33m)[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Sun Dec 1 13:57:56 2019 +0300
+
+    доделал красные зоны(формы)
+
+[33mcommit 9537c40fac3e794aa68f47839de7a70e55bc045b[m
+Merge: 1236584 21a0c7c
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Fri Nov 22 11:40:37 2019 +0300
+
+    Merge pull request #8 from lavalon1807/module3-task1
+
+[33mcommit 21a0c7c90af7bfd2817f8147c991ef8ce9bbc493[m[33m ([m[1;31morigin/module3-task1[m[33m, [m[1;32mmodule3-task1[m[33m)[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Fri Nov 22 11:36:49 2019 +0300
+
+    исправил все ошибки и добавил в игнор нормалайз
+
+[33mcommit 9308d12de1f79d7333649053c869d56a6624ed13[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Thu Nov 21 23:03:02 2019 +0300
+
+    шрифт и фон сверстана мобильная форма
+
+[33mcommit 6807ef17e5ba680dbcb7ff83ce6e54feca56aec2[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Thu Nov 21 15:15:48 2019 +0300
+
+    фон и шрифт, стилизация фото-мобильная
+
+[33mcommit fb621687d918364df2a6a998cae94d3c361795b4[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Wed Nov 20 20:24:42 2019 +0300
+
+    фоновая стилизация, шрифт - мобильная-индекс
+
+[33mcommit 21b3982fdae825b2e7c14fa0ee47e94060382b0d[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Sat Nov 16 20:40:57 2019 +0300
+
+    создание packed-js
+
+[33mcommit 1236584593ba9129feb77951f0200dad470898d8[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Thu Nov 14 23:06:09 2019 +0300
+
+    :kissing_cat: Добавляет сборку Less на Gulp
+
+[33mcommit 156d1931b4db5611c91b43e6c2d895f382f68245[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Thu Nov 14 23:06:02 2019 +0300
+
+    :gift: Нарезает графику для вёрстки
+
+[33mcommit d6bb45c92ba0d9698dfa702aa035a01a0645f821[m
+Merge: 65cf1b2 37ab268
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Tue Nov 12 15:32:07 2019 +0300
+
+    Merge pull request #4 from lavalon1807/module2-task2
+
+[33mcommit 37ab268705c089a3438da5c3890fc6d11c358594[m[33m ([m[1;31morigin/module2-task2[m[33m, [m[1;32mmodule2-task2[m[33m)[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Tue Nov 12 08:56:40 2019 +0300
+
+    сделаны все разделы помеченные красным
+
+[33mcommit 65cf1b29239fa9f0275c7714e0c4b03f3b1c179e[m
+Merge: 03d080d 1fb6c80
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Tue Nov 12 08:21:34 2019 +0300
+
+    Merge pull request #3 from lavalon1807/module2-task1
+
+[33mcommit 1fb6c80509456cde87e5146f7188ac3e46aebb0b[m[33m ([m[1;31morigin/module2-task1[m[33m, [m[1;32mmodule2-task1[m[33m)[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Mon Nov 11 22:41:13 2019 +0300
+
+    сделана мобильная верстка трех страниц
+
+[33mcommit 03d080d1da006cbeaf562c4eb4a6f3f8be2611ea[m
+Merge: 1673261 d85f5ac
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Wed Nov 6 18:23:06 2019 +0300
+
+    Merge pull request #2 from lavalon1807/module1-task1
+
+[33mcommit d85f5ac72c547c61870d0726ba3ae4935c49bb30[m[33m ([m[1;31morigin/module1-task1[m[33m, [m[1;32mmodule1-task1[m[33m)[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Wed Nov 6 17:17:34 2019 +0300
+
+    Повторное добавление наставника
+
+[33mcommit d47f1f59ea73482e95e6370c979de6205f4ae7cb[m
+Merge: e6c2bdf 570e016
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Wed Nov 6 17:12:38 2019 +0300
+
+    добавляем наставника
+
+[33mcommit e6c2bdff3a035e5b9092964f7b2cf87903076bb6[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Wed Nov 6 17:07:45 2019 +0300
+
+    Указал пункт наставник
+
+[33mcommit 063f5ae12603ae772fe974a6f543b8c66813e40e[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Wed Nov 6 16:52:43 2019 +0300
+
+    Добавляет наставника!
+
+[33mcommit 570e0168d38bb113c9c96b862e25cbe60fb9a182[m
+Author: Egor <Cost_benefit@mail.ru>
+Date:   Wed Nov 6 16:52:43 2019 +0300
+
+    Указываем наставника
+
+[33mcommit 1673261771ebf2b39b7c147a5bea23c238cec9d6[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Tue Nov 5 22:36:30 2019 +0300
+
+    :hatching_chick:
