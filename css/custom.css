@@ -118,7 +118,7 @@ body {
   border-color: transparent;
 }
 
-.col-12 {
+.col-sm-6 {
   position: relative;
   padding-top: 220px;
 }
@@ -163,9 +163,6 @@ body {
   }
 
   .project-picture:hover {
-    left: 3%;
-    width: 500px;
-    height: 350px;
     box-shadow: 0 0 5px 10px;
   }
 }
