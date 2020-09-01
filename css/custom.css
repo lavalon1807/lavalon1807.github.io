@@ -74,6 +74,10 @@ body {
   border-color: transparent;
 }
 
+.link.link-middle {
+  margin-right: 20px;
+}
+
 .link.link-yellow {
   color: #ffeb3b;
   border-color: #ffeb3b;
@@ -129,6 +133,22 @@ body {
   left: 10%;
   width: 80%;
   height: 200px;
+}
+
+.question-body {
+  background-color: #3f3939;
+  color: #fff;
+  font-size: 18px;
+}
+
+.question-wrapper {
+  margin: 0 auto;
+  width: 40%;
+  height: 100%;
+}
+
+.question-block {
+  border-top: 1px solid #fff;
 }
 
 @media (min-width: 575px) {
