@@ -6,13 +6,13 @@
 	const layout = document.querySelector('.layout');
 	const maketsSelect = document.querySelectorAll('.grid-select__btn');
 	const miniMaketsSelect = document.querySelectorAll('.grid-select__radio');
+	const content = document.querySelector('.content');
 	
 	const delClassOnMakets = (element, firstClassElement, secondClassElement) => {
 		element.removeAttribute('class');
 		element.setAttribute('class', firstClassElement);
 		element.classList.add(secondClassElement);
 	};
-	delClassOnMakets(layout, massLayout[0]);
 	
 	miniMaketsSelect[0].checked = 'true';
 
@@ -20,8 +20,26 @@
 		item.onclick = () => {
 			delClassOnMakets(layout, 'layout', massLayout[index]);
 			giveWrapperAfterDel();
+
+			delCopyContents();
+
+			for (let i = 0; i < index + 1; i++) {
+				copyContents();
+			}
 		}
 	})
+
+	const copyContents = () => {
+		const copy = content.cloneNode(true);
+		layout.appendChild(copy);
+	};
+
+	const delCopyContents = () => {
+		const contents = document.querySelectorAll('.content');
+		for (let i = 0; i < contents.length; i++) {
+			contents[i].remove();
+		}	
+	};
 
 	const giveWrapperAfterDel = () => {
 		const wrapper = document.querySelectorAll('.wrapper');
