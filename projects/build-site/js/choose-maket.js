@@ -1,12 +1,15 @@
 'use strict';
 (function () {
 	//Переключаем страницы лендинг-блог-магазин
+	const ALL_CONTENTS = 3;
 	const massContents = ['header', 'content', 'footer'];
 	const massLayout = ['layout--landing', 'layout--blog', 'layout--shop'];
 	const layout = document.querySelector('.layout');
 	const maketsSelect = document.querySelectorAll('.grid-select__btn');
 	const miniMaketsSelect = document.querySelectorAll('.grid-select__radio');
 	const content = document.querySelector('.content');
+	const contents = document.querySelectorAll('.content');
+	const footer = document.querySelector('.footer')
 	
 	const delClassOnMakets = (element, firstClassElement, secondClassElement) => {
 		element.removeAttribute('class');
@@ -15,31 +18,34 @@
 	};
 	
 	miniMaketsSelect[0].checked = 'true';
-
+			
 	maketsSelect.forEach((item, index) => {
 		item.onclick = () => {
+			const contents = document.querySelectorAll('.content');
 			delClassOnMakets(layout, 'layout', massLayout[index]);
 			giveWrapperAfterDel();
+			window.deletElement.delContents(contents);
 
-			delCopyContents();
-
-			for (let i = 0; i < index + 1; i++) {
-				copyContents();
+			for (let i = 0; i <= ALL_CONTENTS; i++) {
+				if (index == i) {
+					for (let r = 0; r <= index; r++) {
+						addCont(r);
+					}
+				}
 			}
 		}
 	})
+  //Добавляем контент
+	const addCont = (index) => {
+		layout.insertBefore(contents[index], footer);
+	}
+	//Тут мы очищаем все контенты и добавляем только один
+	window.deletElement.delContents(contents);
+	addCont(0);
 
-	const copyContents = () => {
-		const copy = content.cloneNode(true);
-		layout.appendChild(copy);
-	};
-
-	const delCopyContents = () => {
-		const contents = document.querySelectorAll('.content');
-		for (let i = 0; i < contents.length; i++) {
-			contents[i].remove();
-		}	
-	};
+	for (let i = 0; i < window.massivs.masContents.length; i++) {
+		window.massivs.masContents[i].classList.add('additionalClass')
+	}
 
 	const giveWrapperAfterDel = () => {
 		const wrapper = document.querySelectorAll('.wrapper');
@@ -48,33 +54,16 @@
 		for (let i = 0; i < wrapper.length; i++) {
 			//удаляем все имеющиеся элементы
 			wrapper[i].remove();
-
-			if (additionalClass[i].classList.contains(massContents[i])) {
-				additionalClass[i].classList.add(massContents[i] + '--empty');		
-			}
-			const t = additionalClass[i].querySelector('.placeholder');
-			t.style.display = 'block';
 		}
-	}
 
-	const delElement = (count) => {
-		const wrapper = window.massivs.masContents[count].querySelector('.' 
-			+ window.massivs.masContentsElement[count]);
-		const delBtn = wrapper.querySelectorAll('.delete-btn');
-		const placeholder = window.massivs.masContents[count].querySelector('.placeholder');
-		const elements = window.massivs.masContents[count].querySelectorAll('.element');
-		const massElements = Array.from(elements);
-		
-		placeholder.style.display = 'none';
-		delBtn.forEach((item, index) => {
-			item.onclick = () => {
-				massElements.pop();
-				elements[index].remove();
-				if (massElements.length === 0) {
-					placeholder.style.display = 'block';
-					window.massivs.masContents[count].classList.add(window.massivs.masEmptyWrapper[count]);
+		const placeholder = document.querySelectorAll('.placeholder');
+		additionalClass.forEach((item, index) => {
+			for (let i = 0; i <= massContents.length; i++) {
+				if (item.classList.contains(massContents[i])) {
+					item.classList.add(massContents[i] + '--empty');
+					placeholder[index].style.display = 'block';	
 				}
 			}
-		});
+		})
 	}
 })();

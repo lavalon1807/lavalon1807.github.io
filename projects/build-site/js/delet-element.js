@@ -2,7 +2,7 @@
 (function() {
 	//Добавляем обработчик на удаление элементов
 	window.deletElement = {
-		delElement: function (count) {
+		delElement: function(count) {
 			const wrapper = window.massivs.masContents[count].querySelector('.' 
 				+ window.massivs.masContentsElement[count]);
 			const delBtn = wrapper.querySelectorAll('.delete-btn');
@@ -21,6 +21,12 @@
 					}
 				}
 			});
+		},
+
+		delContents: function(element) {
+			element.forEach((item) => {
+				item.remove();
+			})
 		},
 
 		genDelButton: function(div) {
