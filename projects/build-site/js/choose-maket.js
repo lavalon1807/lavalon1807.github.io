@@ -35,7 +35,7 @@
 			}
 		}
 	})
-  //Добавляем контент
+  //Добавляем контент на странице
 	const addCont = (index) => {
 		layout.insertBefore(contents[index], footer);
 	}
