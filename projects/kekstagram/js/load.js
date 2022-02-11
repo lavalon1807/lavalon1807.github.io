@@ -1,6 +1,6 @@
 'use strict';
 (function () {
-  var ADRESS_SERVER_DATA = 'https://javascript.pages.academy/kekstagram/data';
+  var ADRESS_SERVER_DATA = 'https://21.javascript.pages.academy/kekstagram/data';
   var StatusCode = {
     OK: 200
   };
