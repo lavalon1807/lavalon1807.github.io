@@ -1,6 +1,7 @@
 'use strict';
 (function () {
-  var URL = 'https://21.javascript.pages.academy/keksobooking/data';
+  var URL = 'https://github.com/lavalon1807/basaData/blob/main/data.json';
+
   window.savePins = [];
 
   window.loadPins = function (url, onSuccess) {
@@ -9,9 +10,7 @@
 
     xhr.open('GET', URL);
     xhr.addEventListener('load', function () {
-      if (xhr.status === 200) {
         onSuccess(xhr.response);
-      }
     });
     xhr.send();
   };
