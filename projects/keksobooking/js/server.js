@@ -1,28 +1,30 @@
 'use strict';
 (function () {
-  var URL = 'https://github.com/lavalon1807/basaData/blob/main/data.json';
+  // var URL = 'https://22.javascript.pages.academy/keksobooking/data';
+  // var URL2 = 'https://javascript.pages.academy/keksobooking/data';
+  window.savePins = []
 
-  window.savePins = [];
 
-  window.loadPins = function (url, onSuccess) {
-    var xhr = new XMLHttpRequest();
-    xhr.responseType = 'json';
+  // Тут нет доступа к серверу, чтобы работало сделал отдельный файл data.js
+  // window.loadPins = function (url, onSuccess) {
+  //   var xhr = new XMLHttpRequest();
+  //   xhr.responseType = 'json';
 
-    xhr.open('GET', URL);
-    xhr.addEventListener('load', function () {
-        onSuccess(xhr.response);
-    });
-    xhr.send();
-  };
+  //   xhr.open('GET', URL);
+  //   xhr.addEventListener('load', function () {
+  //       onSuccess(xhr.response);
+  //   });
+  //   xhr.send();
+  // };
 
-  window.successPinsLoad = function (pins) {
-    window.savePins = pins;
+  window.successPinsLoad = function () {
+    window.savePins = window.data;
     var fragment = document.createDocumentFragment();
-    for (var i = 0; i < pins.length; i++) {
-      fragment.appendChild(window.renderPin(pins[i]));
+    for (var i = 0; i < window.savePins.length; i++) {
+      fragment.appendChild(window.renderPin(window.window.savePins[i]));
     }
 
     window.element.mapPins.appendChild(fragment);
-    window.genCards(pins);
+    window.genCards(window.savePins);
   };
 })();
