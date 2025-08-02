@@ -1,12 +1,12 @@
 import axios from 'axios';
 
-const BASE_URL = `https://6.react.pages.academy/six-cities`;
+const BASE_URL = `https://6.react.htmlacademy.pro/six-cities`;
 const REQUEST_TIMEOUT = 5000;
 
 const HttpCode = {
   UNAUTHORIZED: 401
 };
-
+// загружает данные
 export const createAPI = (onUnauthorized) => {
   const api = axios.create({
     baseURL: BASE_URL,
