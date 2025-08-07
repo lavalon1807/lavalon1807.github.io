@@ -1,20 +1,20 @@
-'use strict';
+"use strict";
 (function () {
   var LENGTH_PICTURE_RANDOM = 10;
-  var filterForm = document.querySelector('.img-filters__form');
-  var filterButton = filterForm.querySelectorAll('.img-filters__button');
-  var filterRandom = filterForm.querySelector('#filter-random');
-  var filterDefault = filterForm.querySelector('#filter-default');
-  var filterDiscussed = filterForm.querySelector('#filter-discussed');
+  var filterForm = document.querySelector(".img-filters__form");
+  var filterButton = filterForm.querySelectorAll(".img-filters__button");
+  var filterRandom = filterForm.querySelector("#filter-random");
+  var filterDefault = filterForm.querySelector("#filter-default");
+  var filterDiscussed = filterForm.querySelector("#filter-discussed");
 
-  filterForm.classList.add('hidden');
+  filterForm.classList.add("hidden");
 
   filterForm.onclick = function (e) {
     var target = e.target;
     filterButton.forEach(function (item) {
-      item.classList.remove('img-filters__button--active');
+      item.classList.remove("img-filters__button--active");
     });
-    target.classList.add('img-filters__button--active');
+    target.classList.add("img-filters__button--active");
   };
 
   // Фильтруем массив 10 штук рандом
@@ -22,10 +22,10 @@
     var copyDis = arr.slice();
 
     var newPhoto = copyDis.sort(function (a, b) {
-      if (a.comments > b.comments) {
+      if (a.comments < b.comments) {
         return 1;
       }
-      if (a.comments < b.comments) {
+      if (a.comments > b.comments) {
         return -1;
       }
       return 0;
@@ -39,7 +39,9 @@
     var copyRand = arr.slice();
 
     for (var i = 0; i < length; i++) {
-      resultArray.push(copyRand.splice(Math.floor(Math.random() * copyRand.length), 1)[0]);
+      resultArray.push(
+        copyRand.splice(Math.floor(Math.random() * copyRand.length), 1)[0]
+      );
     }
 
     return resultArray;
@@ -71,16 +73,15 @@
     return copyArray;
   };
 
-  filterDiscussed.addEventListener('click', function () {
+  filterDiscussed.addEventListener("click", function () {
     window.debounce(genDiscussed);
   });
 
-  filterRandom.addEventListener('click', function () {
+  filterRandom.addEventListener("click", function () {
     window.debounce(genRandom);
   });
 
-  filterDefault.addEventListener('click', function () {
+  filterDefault.addEventListener("click", function () {
     window.debounce(genDefault);
   });
-
 })();
