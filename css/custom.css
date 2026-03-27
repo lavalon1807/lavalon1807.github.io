@@ -8,7 +8,7 @@ body {
 }
 
 .dark-bg {
-  background: #000;
+  background: #04145c;
   color: #fff;
 }
 
@@ -183,6 +183,6 @@ body {
   }
 
   .project-picture:hover {
-    box-shadow: 0 0 5px 10px;
+    box-shadow: 0 0 35px 10px;
   }
 }
