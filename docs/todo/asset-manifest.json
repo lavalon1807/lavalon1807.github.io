@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/todo/static/css/main.d46022ea.css",
-    "main.js": "/todo/static/js/main.1bd1266f.js",
+    "main.js": "/todo/static/js/main.60953428.js",
     "static/js/453.85e5760e.chunk.js": "/todo/static/js/453.85e5760e.chunk.js",
     "static/media/self.svg": "/todo/static/media/self.f31bc26f4f87a4a2255dd4d0625bf74a.svg",
     "static/media/settings-white.svg": "/todo/static/media/settings-white.9b5cc889b04341f1d0c916a334accb9c.svg",
@@ -18,11 +18,11 @@
     "static/media/burger-black.svg": "/todo/static/media/burger-black.57eaf075fe7138ccd908b9c9efc796d3.svg",
     "static/media/burger-white.svg": "/todo/static/media/burger-white.f9a75700d74c0d136b500513177888fc.svg",
     "main.d46022ea.css.map": "/todo/static/css/main.d46022ea.css.map",
-    "main.1bd1266f.js.map": "/todo/static/js/main.1bd1266f.js.map",
+    "main.60953428.js.map": "/todo/static/js/main.60953428.js.map",
     "453.85e5760e.chunk.js.map": "/todo/static/js/453.85e5760e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d46022ea.css",
-    "static/js/main.1bd1266f.js"
+    "static/js/main.60953428.js"
   ]
 }
