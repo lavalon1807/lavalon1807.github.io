@@ -203,14 +203,13 @@
             <p>
               <a href="#" 
                 class="link link-green mr-4" 
-                onclick="openSlider(event, 
-                [
-                  'projects/factory-1c/images/remains-1.png', 
-                  'projects/factory-1c/images/remains-2.png',
+                onclick="openSlider(event, [
+                  {src: 'projects/factory-1c/images/remains-1.png', caption: 'Отчет по остаткам 1'},
+                  {src: 'projects/factory-1c/images/remains-2.png', caption: 'Отчет по остаткам 2'}
                 ])">
                 Смотреть проект (Скриншоты)
               </a>
-              <a href="https://github.com/lavalon1807/lavalon1807.github.io/tree/master/projects/factory-1c" 
+              <a href="https://github.com/lavalon1807/lavalon1807.github.io/tree/master/projects/escape-room" 
               target="_blank" class="link">Исходный код</a>
             </p>
           </div>
@@ -377,17 +376,20 @@
         <!-- Кнопка закрытия (крестик) -->
         <span onclick="closeSlider()" style="position: absolute; top: 20px; right: 40px; color: #fff; font-size: 50px; font-weight: bold; cursor: pointer; z-index: 10000; line-height: 1;">&times;</span>
         
-        <!-- Контейнер для картинки -->
-        <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; position: relative;">
+        <!-- Контейнер для картинки и текста -->
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%; position: relative; padding: 0 60px; box-sizing: border-box;">
             
             <!-- Стрелка влево -->
-            <button onclick="prevSlide()" style="position: absolute; left: 20px; background: rgba(255,255,255,0.2); border: none; color: white; font-size: 40px; padding: 10px 20px; cursor: pointer; border-radius: 5px; z-index: 10000;">&#10094;</button>
+            <button onclick="prevSlide()" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.2); border: none; color: white; font-size: 40px; padding: 10px 20px; cursor: pointer; border-radius: 5px; z-index: 10000;">&#10094;</button>
             
-            <!-- Сама картинка (ширина 100%) -->
-            <img id="sliderImage" src="" style="width: 85%; object-fit: contain;">
+            <!-- Картинка -->
+            <img id="sliderImage" src="" style="max-width: 100%; max-height: 70vh; object-fit: contain; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+            
+            <!-- ТЕКСТ ПОД КАРТИНКОЙ -->
+            <p id="sliderCaption" style="color: #fff; font-size: 1.4rem; font-weight: bold; margin-top: 20px; margin-bottom: 0; font-family: sans-serif; text-align: center; background: rgba(0,0,0,0.6); padding: 10px 20px; border-radius: 5px;"></p>
             
             <!-- Стрелка вправо -->
-            <button onclick="nextSlide()" style="position: absolute; right: 20px; background: rgba(255,255,255,0.2); border: none; color: white; font-size: 40px; padding: 10px 20px; cursor: pointer; border-radius: 5px; z-index: 10000;">&#10095;</button>
+            <button onclick="nextSlide()" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.2); border: none; color: white; font-size: 40px; padding: 10px 20px; cursor: pointer; border-radius: 5px; z-index: 10000;">&#10095;</button>
             
         </div>
     </div>
@@ -428,43 +430,51 @@
       let currentImages = [];
       let currentIndex = 0;
 
-      // Функция открытия слайдера
+      // Функция обновления картинки и текста
+      function updateSlider() {
+          if (currentImages.length === 0) return;
+          const currentItem = currentImages[currentIndex];
+          
+          document.getElementById('sliderImage').src = currentItem.src;
+          document.getElementById('sliderCaption').textContent = currentItem.caption || ''; 
+      }
+
+      // Открытие слайдера
       function openSlider(event, imagesArray) {
-          event.preventDefault(); // Отменяем переход по ссылке
+          event.preventDefault();
           currentImages = imagesArray;
           currentIndex = 0;
-          document.getElementById('sliderImage').src = currentImages[currentIndex];
+          updateSlider();
           document.getElementById('customSlider').style.display = 'block';
       }
 
-      // Функция закрытия
+      // Закрытие
       function closeSlider() {
           document.getElementById('customSlider').style.display = 'none';
       }
 
-      // Переключение вперед
+      // Вперед
       function nextSlide() {
           if (currentImages.length > 0) {
               currentIndex = (currentIndex + 1) % currentImages.length;
-              document.getElementById('sliderImage').src = currentImages[currentIndex];
+              updateSlider();
           }
       }
 
-      // Переключение назад
+      // Назад
       function prevSlide() {
           if (currentImages.length > 0) {
               currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
-              document.getElementById('sliderImage').src = currentImages[currentIndex];
+              updateSlider();
           }
       }
 
-      // Закрытие при клике на темный фон
+      // Закрытие по клику на фон
       document.getElementById('customSlider').addEventListener('click', function(e) {
           if (e.target === this) {
               closeSlider();
           }
       });
-  </script>
-
+    </script>
   </body>
 </html>
