@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Catalog.СписокНоменклатуры.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Договоры.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗаказыПоставщику.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПриходнаяНакладная.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.РасходнаяНакладная.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ЦеныНоменклатуры.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ХарактеристикиНоменклатуры.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.ВидыХарактеристик.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ВариантыЗначенийХарактеристик.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Catalog.СписокНоменклатуры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Договоры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ЗаказыПоставщику.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ТорговыеОперации</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ПриходнаяНакладная.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ТорговыеОперации</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.РасходнаяНакладная.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ТорговыеОперации</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ЦеныНоменклатуры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ПериодическиеДанные</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ХарактеристикиНоменклатуры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Характеристики</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.ВидыХарактеристик.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Характеристики</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.ВариантыЗначенийХарактеристик.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Характеристики</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Catalog.СписокНоменклатуры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+		</Command>
+		<Command name="Catalog.Договоры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+		</Command>
+		<Command name="Document.ЗаказыПоставщику.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ТорговыеОперации</CommandGroup>
+		</Command>
+		<Command name="Document.ПриходнаяНакладная.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ТорговыеОперации</CommandGroup>
+		</Command>
+		<Command name="Document.РасходнаяНакладная.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ТорговыеОперации</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ЦеныНоменклатуры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ПериодическиеДанные</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ХарактеристикиНоменклатуры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Характеристики</CommandGroup>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.ВидыХарактеристик.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Характеристики</CommandGroup>
+		</Command>
+		<Command name="Catalog.ВариантыЗначенийХарактеристик.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Характеристики</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.УчетныеДанные</Group>
+		<Group>CommandGroup.ТорговыеОперации</Group>
+		<Group>CommandGroup.ПериодическиеДанные</Group>
+		<Group>CommandGroup.Характеристики</Group>
+	</GroupsOrder>
+</CommandInterface>
