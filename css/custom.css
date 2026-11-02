@@ -288,7 +288,7 @@ body {
   }
 
   .project-picture:hover {
-    box-shadow: 0 0 35px 10px;
+    box-shadow: 0 0 35px 10px #3fbf7f;
   }
 }
 
